@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "709d5aba-607f-4fbd-81cc-222e2505a02c",
+		"name": "FWD1_Teti Frida Nurlaili",
+		"description": "- Nama : Teti Frida Nurlaili\n- Kelas : FWD 1\n- Universitas : Gunadarma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24155752"
+	},
+	"item": [
+		{
+			"name": "task_management",
+			"item": [
+				{
+					"name": "task_categories",
+					"item": [
+						{
+							"name": "task_categories",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Hobby",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/TugasDokumentasiApi/api/task_categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"TugasDokumentasiApi",
+										"api",
+										"task_categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "task_categories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/TugasDokumentasiApi/api/task_categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"TugasDokumentasiApi",
+										"api",
+										"task_categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "task_categories",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Pengalaman",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/TugasDokumentasiApi/api/task_categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"TugasDokumentasiApi",
+										"api",
+										"task_categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "task_categories",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/TugasDokumentasiApi/api/task_categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"TugasDokumentasiApi",
+										"api",
+										"task_categories"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"description": "CRUD Tabel task_categories"
+				},
+				{
+					"name": "tasks",
+					"item": [
+						{
+							"name": "tasks",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "Operator Produksi",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Mengebor papan kayu menggunakan bor manual",
+											"type": "text"
+										},
+										{
+											"key": "start_date",
+											"value": "2018-05-08",
+											"type": "text"
+										},
+										{
+											"key": "finish_date",
+											"value": "2019-05-27",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Finish",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/TugasDokumentasiApi/api/task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"TugasDokumentasiApi",
+										"api",
+										"task"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tasks",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/TugasDokumentasiApi/api/task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"TugasDokumentasiApi",
+										"api",
+										"task"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tasks",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "Operator Produksi",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Melakukan proses chipping, staining, dan painting pada papan kayu",
+											"type": "text"
+										},
+										{
+											"key": "start_date",
+											"value": "2018-05-08",
+											"type": "text"
+										},
+										{
+											"key": "finish_date",
+											"value": "2019-05-27",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Finish",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/TugasDokumentasiApi/api/task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"TugasDokumentasiApi",
+										"api",
+										"task"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tasks",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/TugasDokumentasiApi/api/task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"TugasDokumentasiApi",
+										"api",
+										"task"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"description": "CRUD Tabel tasks"
+				}
+			],
+			"description": "Ini Adalah Nama Database"
+		}
+	]
+}
